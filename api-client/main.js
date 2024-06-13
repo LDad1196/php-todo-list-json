@@ -3,11 +3,17 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-        todolist: []
+        newTodo: '',
+        todolist: [],
     }
   },
   methods: {
-
+    addTodo () {
+         if (this.newTodo.trim() !== '') {
+            this.todolist.push(this.newTodo);
+            this.newTodo = '';
+         }
+    }
   },
   mounted() {
     console.log("Recupero i dati dal server");

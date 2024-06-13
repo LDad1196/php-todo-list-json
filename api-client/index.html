@@ -14,6 +14,11 @@
 
         <h1>Benvenuto nella tua TODOLIST</h1>
 
+        <form @submit.prevent="addTodo">
+            <input v-model="newTodo" placeholder="Aggiungi un nuovo todo" />
+            <button type="submit">Aggiungi</button>
+        </form>
+
         <ul>
             <li v-for="todo in todolist">{{ todo }}</li>
         </ul>
