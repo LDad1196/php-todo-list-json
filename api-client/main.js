@@ -13,6 +13,10 @@ createApp({
             this.todolist.push(this.newTodo);
             this.newTodo = '';
          }
+    },
+
+    removeTodo (index) {
+        this.todolist.splice(index,1);
     }
   },
   mounted() {
