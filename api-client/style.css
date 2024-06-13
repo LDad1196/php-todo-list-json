@@ -1,0 +1,14 @@
+body {
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+}
