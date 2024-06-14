@@ -1,9 +1,7 @@
 <?php
 
-$todolist = [ "Pulire il pavimento", "Cucinare", "Andare al supermercato", "Portare fuori il cane", "Fare la lavatrice" ];
+$fileContent = file_get_contents("dati.json");
 
 header('Content-Type: application/json');
 
-$jsonString = json_encode($todolist);
-
-echo $jsonString;
+echo $fileContent;
